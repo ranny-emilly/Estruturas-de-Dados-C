@@ -118,13 +118,14 @@ Do-While (Faça... Enquanto)
 Testa a condição depois. Garante que o código rode pelo menos uma vez.
 
 ```C
-
 do {
     // bloco de código
 } while (condicao);
+```
 Controle de Fluxo nos Loops
+
 break: Interrompe o loop imediatamente (sai do laço).
 
 continue: Pula apenas a rodada atual e vai para a próxima iteração.
-```
+
 
