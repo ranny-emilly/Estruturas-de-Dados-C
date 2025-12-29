@@ -9,11 +9,14 @@ Pergunte: "Deseja calcular outra turma? (s/n)". Se digitar 's', o programa reini
 #include <stdio.h>
 
 int main(){
-    int alunos, i = 0;
-    float nota, media, soma = 0;
+    int alunos, i;
+    float nota, media, soma;
     char outra;
 
     do {
+        i = 0;   
+        soma = 0;
+
         printf("Quantos alunos tem na turma?\n");
         scanf("%d", &alunos);
 
@@ -26,6 +29,12 @@ int main(){
 
     media = soma/alunos;
     printf("Soma = %.2f / %d alunos = %.2f\n", soma, alunos, media);
+    
+    if (media >= 7.0) {
+            printf("Situacao: Turma APROVADA!\n");
+        } else {
+            printf("Situacao: Turma Reprovada.\n");
+        }
 
     printf("Deseja calcular outra turma? (s/n)\n");
     scanf(" %c", &outra);
