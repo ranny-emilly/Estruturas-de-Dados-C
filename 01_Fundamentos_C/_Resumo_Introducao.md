@@ -129,3 +129,5 @@ break: Interrompe o loop imediatamente (sai do laço).
 continue: Pula apenas a rodada atual e vai para a próxima iteração.
 
 
+
+
