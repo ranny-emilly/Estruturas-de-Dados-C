@@ -129,5 +129,56 @@ break: Interrompe o loop imediatamente (sai do laço).
 continue: Pula apenas a rodada atual e vai para a próxima iteração.
 
 
+# 2. Modularização (Funções)
+*(Arquivos de referência: `_Funcoes.c`)*
 
+### O que são?
+Dividir o código em blocos menores.
+* **Vantagem:** Evita poluir a `main` com 500 linhas de código.
+* **Organização:** Se der erro, você sabe exatamente em qual bloco corrigir.
+
+### Tipos de Funções
+1.  **Com Retorno (`int`, `float`, `char`):** Fazem um cálculo e **devolvem** uma resposta para quem chamou.
+2.  **Sem Retorno (`void`):** Apenas executam uma **ação** (ex: imprimir menu, limpar tela) e não devolvem valor matemático.
+
+### Estrutura e Exemplos
+
+```c
+#include <stdio.h>
+
+// 1. Protótipos (Assinaturas antes da main)
+float maior(float num1, float num2); // Retorna float
+void exibir_mensagem();              // Não retorna nada (void)
+
+int main(){
+    float x, y, m;
+
+    // Chamando função VOID (apenas executa)
+    exibir_mensagem();
+
+    printf("Insira dois valores: ");
+    scanf("%f %f", &x, &y);
+
+    // Chamando função COM RETORNO (precisa guardar o resultado em 'm')
+    m = maior(x, y);
+
+    printf("O maior é %.2f", m);
+    return 0;
+}
+
+// 2. Implementações (Depois da main)
+
+// Função que calcula e DEVOLVE valor
+float maior(float num1, float num2){
+    if(num1 > num2) return num1;
+    else return num2;
+}
+
+// Função que apenas FAZ UMA AÇÃO
+void exibir_mensagem(){
+    printf("--- BEM VINDO AO SISTEMA ---\n");
+    // Não precisa de return (ou usa apenas 'return;' vazio)
+}
+
+```
 
