@@ -105,5 +105,3 @@ Limites: Acessar apenas dentro do tamanho alocado (0 a n-1).
 
 Ponteiros Soltos: Após dar free(p), faça p = NULL para evitar bugs de "Dangling Pointer".
 
-## 6.EXPLICAÇÃO VIDEO
-A partir de agora esse código é apenas explicativo
