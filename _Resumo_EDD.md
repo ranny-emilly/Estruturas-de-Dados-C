@@ -1,6 +1,6 @@
 # Estruturas de Dados (EDD)
 
-> Todo o conteúdo abaixo foi escrito por mim, com base no meu entendimento aprendizado sobre introdução Estruturas de Dados.
+> Todo o conteúdo abaixo foi escrito por mim, com base no meu aprendizado sobre introdução Estruturas de Dados.
 
 ---
 
