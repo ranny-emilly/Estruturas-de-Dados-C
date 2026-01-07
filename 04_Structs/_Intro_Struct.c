@@ -13,6 +13,7 @@ typedef struct{
     char nome[100];
 }Pessoa;
 
+
 //outrs estrutura:
 //struct nome{};
 
