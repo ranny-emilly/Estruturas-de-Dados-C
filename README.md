@@ -4,8 +4,6 @@ Este repositório faz parte do meu **processo de aprendizado e aprofundamento em
 
 Ele foi criado durante um curso que estou realizando com foco em **entender de fato como as estruturas funcionam internamente**, especialmente no que diz respeito a **memória, ponteiros, alocação dinâmica e análise de custo computacional**.
 
-O objetivo aqui **não é apenas implementar**, mas **compreender o porquê**.
-
 ---
 
 ## 🎯 Objetivos do repositório
