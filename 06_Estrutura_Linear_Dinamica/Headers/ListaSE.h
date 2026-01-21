@@ -10,7 +10,7 @@ typedef struct NoSimples{
 
 
 void ls_inserir_inicio(NoSimples **cabeca, int valor);
-void ls_inserir_fim(NoSimples **cauda, int valor);
+void ls_inserir_fim(NoSimples **cabeca, int valor);
 NoSimples *ls_buscar(NoSimples *cabeca, int valor);
 bool ls_atualizar_primeiro(NoSimples *cabeca, int antigo, int novo);
 bool ls_remover_valor(NoSimples **cabeca, int valor);
